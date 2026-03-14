@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Личный кабинет - NOVA TRADE</title>
+  <meta name="description" content="Регистрация, авторизация и управление профилем клиента." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="account">
+  <div data-header></div>
+  <main class="container" id="account-root">
+    <nav class="breadcrumbs">Главная / Личный кабинет</nav>
+    <section class="section panel">
+      <h1>Личный кабинет</h1>
+      <div class="account-tabs">
+        <button data-tab-target="auth">Авторизация</button>
+        <button data-tab-target="profile">Профиль</button>
+        <button data-tab-target="history">История</button>
+      </div>
+
+      <div data-tab-panel="auth">
+        <form id="login-form" class="form">
+          <div class="row">
+            <input name="name" type="text" placeholder="Имя" required />
+            <input name="email" type="email" placeholder="Email" required />
+          </div>
+          <button class="cta cta-primary" type="submit">Войти / Зарегистрироваться</button>
+        </form>
+      </div>
+
+      <div data-tab-panel="profile" class="hidden">
+        <form id="profile-form" class="form">
+          <div class="row">
+            <input id="profile-name" name="name" type="text" placeholder="Имя" />
+            <input id="profile-email" name="email" type="email" placeholder="Email" />
+          </div>
+          <button class="cta cta-secondary" type="submit">Сохранить профиль</button>
+        </form>
+      </div>
+
+      <div data-tab-panel="history" class="hidden">
+        <h3>История обращений</h3>
+        <ul id="history-list"></ul>
+      </div>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

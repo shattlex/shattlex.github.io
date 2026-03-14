@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Карточка решения - NOVA TRADE</title>
+  <meta name="description" content="Карточка товара/услуги: характеристики, преимущества, FAQ и форма обратной связи." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="catalog">
+  <div data-header></div>
+  <main class="container">
+    <nav class="breadcrumbs">Главная / Каталог / Карточка</nav>
+    <section class="section product-layout">
+      <article class="panel">
+        <div class="gallery-main"></div>
+        <h1>Станция очистки воды A1</h1>
+        <p class="price">79 000 ₽</p>
+        <div class="badges">
+          <span class="badge">Гарантия 24 месяца</span>
+          <span class="badge">Срок поставки 7 дней</span>
+          <span class="badge">Монтаж под ключ</span>
+        </div>
+        <p class="muted">Компактная система для коммерческих объектов, адаптируется под производительность и тип воды.</p>
+      </article>
+      <article class="panel">
+        <h2>Характеристики</h2>
+        <ul>
+          <li>Производительность: до 4 м³/ч</li>
+          <li>Потребление: 1.2 кВт</li>
+          <li>Материал корпуса: нержавеющая сталь</li>
+        </ul>
+        <h3>FAQ</h3>
+        <div class="faq-item"><strong>Есть ли сервис?</strong><br />Да, включая регулярное обслуживание.</div>
+        <div class="faq-item"><strong>Можно ли кастомизировать?</strong><br />Да, под параметры объекта.</div>
+        <h3>Запросить консультацию</h3>
+        <form class="form" data-lead-form>
+          <input type="text" name="name" placeholder="Имя" required />
+          <input type="tel" name="phone" placeholder="Телефон" required />
+          <textarea name="comment" rows="3" placeholder="Комментарий"></textarea>
+          <input type="text" name="company" class="hidden" tabindex="-1" autocomplete="off" />
+          <button class="cta cta-primary" type="submit">Отправить</button>
+          <div class="alert">Запрос принят.</div>
+        </form>
+      </article>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

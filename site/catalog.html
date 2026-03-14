@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог - NOVA TRADE</title>
+  <meta name="description" content="Каталог разделов и оборудования с фильтрацией, сортировкой и удобной навигацией." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="catalog">
+  <div data-header></div>
+  <main class="container">
+    <nav class="breadcrumbs">Главная / Каталог</nav>
+    <section class="section">
+      <h1>Каталог решений</h1>
+      <div class="toolbar">
+        <select id="filter-category">
+          <option value="all">Все категории</option>
+          <option value="water">Водоподготовка</option>
+          <option value="pumps">Насосное оборудование</option>
+          <option value="auto">Автоматизация</option>
+        </select>
+        <select id="sort">
+          <option value="popular">Сначала популярные</option>
+          <option value="price-asc">Цена по возрастанию</option>
+          <option value="price-desc">Цена по убыванию</option>
+        </select>
+        <input id="search-local" type="search" placeholder="Поиск внутри каталога" />
+      </div>
+      <div class="grid-3" id="catalog-grid"></div>
+    </section>
+  </main>
+  <div data-footer></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
