@@ -6,3 +6,4 @@ dist/
 *.log
 maket.zip
 tmp_make/
+web/out/

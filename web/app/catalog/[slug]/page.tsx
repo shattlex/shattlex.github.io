@@ -1,7 +1,13 @@
 import { notFound } from "next/navigation";
-import { getProduct } from "@/lib/api";
+import { fallbackProducts, getProduct } from "@/lib/api";
 
 type Props = { params: Promise<{ slug: string }> };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return fallbackProducts.map((product) => ({ slug: product.slug }));
+}
 
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;

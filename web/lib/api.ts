@@ -20,7 +20,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:4000/api";
 
 async function fetchFromApi<T>(path: string, fallback: T): Promise<T> {
   try {
-    const response = await fetch(`${API_URL}${path}`, { cache: "no-store" });
+    const response = await fetch(`${API_URL}${path}`, { cache: "force-cache" });
     if (!response.ok) {
       return fallback;
     }
